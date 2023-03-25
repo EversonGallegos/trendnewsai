@@ -1,0 +1,60 @@
+.post {
+  border: 1px solid #eee;
+
+  &:not(:last-child) {
+    border-bottom: 0;
+  }
+
+  padding: 20px;
+
+  &--header {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  &--author-name {
+    padding: 1px 0;
+
+    &:hover {
+      border-bottom: 1px solid $tc-smooth;
+    }
+  }
+
+  &--author-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  &--title {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+
+  &--content {
+    margin-bottom: 10px;
+  }
+
+  &--aux-buttons {
+    display: flex;
+    gap: 10px;
+
+    .button {
+      display: flex;
+      padding: 7px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+}

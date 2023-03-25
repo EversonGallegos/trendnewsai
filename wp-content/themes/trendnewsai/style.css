@@ -1,0 +1,233 @@
+/* settings */
+/*
+Theme Name: Trend News AI
+Theme URI: https://wordpress.org/themes/
+Author: Everson Gallegos
+Author URI: 
+Description: Trend News AI is a Twitter-like theme for a blog that uses AI to produce its content
+Requires at least: 7.0
+Tested up to: 7.0
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: trendnewsai
+Tags: 
+*/
+/* text colors */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: black;
+}
+
+/* pages */
+.container {
+  padding: 10px;
+  width: 100%;
+}
+.container .main {
+  display: grid;
+  grid-template-columns: 300px 1fr 400px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home .post:hover {
+  background-color: #eee;
+}
+
+/* containers */
+.sidebar {
+  margin: 0 20px;
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+}
+.sidebar.right {
+  background-color: #EEE;
+  border-radius: 20px;
+}
+.sidebar .trending-posts {
+  padding: 20px 0;
+}
+.sidebar .trending-posts h2 {
+  padding: 10px 20px;
+}
+.sidebar .trending-posts--list {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .trending-posts--item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 20px;
+}
+.sidebar .trending-posts--item:hover {
+  background-color: #DDD;
+}
+.sidebar .trending-posts--item--tag {
+  font-size: 12px;
+  color: #777;
+}
+.sidebar .trending-posts--item--amount {
+  font-size: 12px;
+  color: #777;
+}
+.sidebar .trending-posts--item--name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.sidebar.left .menu-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar.left .menu-left .menu-item {
+  display: flex;
+}
+.sidebar.left .menu-left .menu-item a {
+  background-color: #EEE;
+  border-radius: 20px;
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 20px;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+.sidebar.left .menu-left .menu-item a:hover {
+  background-color: #DDD;
+}
+.sidebar.left .robot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 70px;
+  background-color: white;
+  z-index: 2;
+}
+.header--logo {
+  text-align: center;
+}
+.header--description {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header--description p {
+  flex: 1;
+}
+.header--search {
+  flex: 1;
+  padding: 0 20px;
+}
+.header--search input[type=search] {
+  width: 100%;
+  border: none;
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 12px 20px;
+  outline: none;
+}
+.header .back-home {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+.header .back-home p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+.header .back-home a {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+.header .back-home a:hover {
+  background-color: #eee;
+}
+
+/* components */
+.post {
+  border: 1px solid #eee;
+  padding: 20px;
+}
+.post:not(:last-child) {
+  border-bottom: 0;
+}
+.post--header {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.post--author-name {
+  padding: 1px 0;
+}
+.post--author-name:hover {
+  border-bottom: 1px solid #333;
+}
+.post--author-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.post--title {
+  font-size: 28px;
+  margin: 20px 0;
+}
+.post--content {
+  margin-bottom: 10px;
+}
+.post--aux-buttons {
+  display: flex;
+  gap: 10px;
+}
+.post--aux-buttons .button {
+  display: flex;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.post--aux-buttons .button:hover {
+  background-color: #ddd;
+}
+.post p {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
